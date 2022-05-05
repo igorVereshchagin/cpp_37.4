@@ -1,11 +1,16 @@
 #include <QApplication>
 #include <QPushButton>
+#include "CalcMainWindow.h"
+#include "./ui_calc.h"
 
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
-  QPushButton button("Hello world!", nullptr);
-  button.resize(200, 100);
-  button.show();
+  CalcMainWindow window(nullptr);
+  Ui::MainWindow calc;
+  calc.setupUi(&window);
+  window.setLineEdit(calc.lineEdit);
+  window.resize(500, 700);
+  window.show();
   return QApplication::exec();
 }

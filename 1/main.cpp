@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
   Ui::MainWindow calc;
   calc.setupUi(&window);
   window.setLineEdit(calc.lineEdit);
+  window.clear();
   window.resize(500, 700);
   window.show();
   return QApplication::exec();

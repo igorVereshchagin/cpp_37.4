@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>240</width>
+    <width>259</width>
     <height>680</height>
    </rect>
   </property>
@@ -242,7 +242,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>240</width>
+     <width>259</width>
      <height>22</height>
     </rect>
    </property>
@@ -491,5 +491,6 @@
   <slot>slot_prev()</slot>
   <slot>slot_vol_up()</slot>
   <slot>slot_vol_down()</slot>
+  <slot>slot_timeout()</slot>
  </slots>
 </ui>

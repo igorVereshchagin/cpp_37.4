@@ -87,9 +87,11 @@ public slots:
     }
   }
   void slot_vol_up() {
+    assert(soundVolumeIndicator != nullptr);
     soundVolumeIndicator->setValue(soundVolumeIndicator->value() + 10);
   }
   void slot_vol_down() {
+    assert(soundVolumeIndicator != nullptr);
     soundVolumeIndicator->setValue(soundVolumeIndicator->value() - 10);
   }
 
